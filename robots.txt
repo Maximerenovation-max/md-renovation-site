@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://md-renovation91.fr/sitemap.xml
