@@ -30,7 +30,8 @@ a:hover, button:hover {
     animation: none !important;
     transition: none !important;
   }
-}/* Apparition au défilement */
+}
+/* Apparition au défilement */
 .md-scroll-animate {
   opacity: 0;
   transform: translateY(28px);
@@ -40,7 +41,8 @@ a:hover, button:hover {
 .md-scroll-animate.md-visible {
   opacity: 1;
   transform: translateY(0);
-}/* M.D Rénovation - animations premium */
+}
+/* M.D Rénovation - animations premium */
 .md-card,
 .service,
 .realisations img {
@@ -55,4 +57,78 @@ a:hover, button:hover {
 
 .realisations img:hover {
   transform: scale(1.04);
+}
+/* Fenêtre cookies M.D Rénovation */
+.cookie-banner {
+  position: fixed;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  width: min(92%, 520px);
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.25);
+  z-index: 9999;
+  padding: 24px;
+  border: 1px solid #eee;
+}
+
+.cookie-box h2 {
+  margin-bottom: 14px;
+  font-size: 24px;
+  color: #171717;
+}
+
+.cookie-box p {
+  color: #555;
+  line-height: 1.6;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.cookie-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.cookie-buttons button {
+  flex: 1;
+  min-width: 120px;
+  padding: 13px 16px;
+  border-radius: 8px;
+  border: 1px solid #d71920;
+  background: #fff;
+  color: #d71920;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cookie-buttons #cookie-accept {
+  background: #d71920;
+  color: #fff;
+}
+
+.cookie-buttons button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+@media (max-width: 600px) {
+  .cookie-banner {
+    bottom: 10px;
+    padding: 20px;
+  }
+
+  .cookie-box h2 {
+    font-size: 21px;
+  }
+
+  .cookie-buttons {
+    flex-direction: column;
+  }
+
+  .cookie-buttons button {
+    width: 100%;
+  }
 }
