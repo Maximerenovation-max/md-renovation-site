@@ -313,4 +313,33 @@ body {
     padding: 11px !important;
     font-size: 15px !important;
   }
+}/* MENU MOBILE M.D Rénovation */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block !important;
+    cursor: pointer;
+  }
+
+  .links {
+    display: none !important;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 9999;
+    padding: 15px 0;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  }
+
+  .links.open {
+    display: flex !important;
+    flex-direction: column;
+  }
+
+  .links a {
+    display: block;
+    padding: 14px 20px;
+    text-align: center;
+  }
 }
