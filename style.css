@@ -141,3 +141,15 @@ a:hover, button:hover {
   transform: translate(-50%, -50%) !important;
   z-index: 99999 !important;
 }
+/* Fenêtre cookies - affichage immédiat au centre */
+#cookie-banner {
+  position: fixed !important;
+  top: 50% !important;
+  left: 50% !important;
+  right: auto !important;
+  bottom: auto !important;
+  transform: translate(-50%, -50%) !important;
+  margin: 0 !important;
+  width: min(90%, 650px) !important;
+  z-index: 999999 !important;
+}
