@@ -40,4 +40,19 @@ a:hover, button:hover {
 .md-scroll-animate.md-visible {
   opacity: 1;
   transform: translateY(0);
+}/* M.D Rénovation - animations premium */
+.md-card,
+.service,
+.realisations img {
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.md-card:hover,
+.service:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+}
+
+.realisations img:hover {
+  transform: scale(1.04);
 }
