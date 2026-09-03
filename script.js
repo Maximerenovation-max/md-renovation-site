@@ -53,3 +53,10 @@ document.addEventListener("DOMContentLoaded", function () {
     alert("Vous pouvez choisir d’accepter ou de refuser les cookies non essentiels.");
   });
 });
+document.addEventListener("DOMContentLoaded", function () {
+  const cookieBanner = document.getElementById("cookie-banner");
+
+  if (cookieBanner) {
+    document.body.appendChild(cookieBanner);
+  }
+});
