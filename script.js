@@ -24,3 +24,32 @@ document.addEventListener("DOMContentLoaded", function () {
 
   revealElements();
 });
+/* Gestion de la fenêtre cookies M.D Rénovation */
+document.addEventListener("DOMContentLoaded", function () {
+  const banner = document.getElementById("cookie-banner");
+  const accept = document.getElementById("cookie-accept");
+  const reject = document.getElementById("cookie-reject");
+  const customize = document.getElementById("cookie-customize");
+
+  if (!banner) return;
+
+  if (localStorage.getItem("md-cookie-choice")) {
+    banner.style.display = "none";
+  } else {
+    banner.style.display = "block";
+  }
+
+  accept.addEventListener("click", function () {
+    localStorage.setItem("md-cookie-choice", "accepted");
+    banner.style.display = "none";
+  });
+
+  reject.addEventListener("click", function () {
+    localStorage.setItem("md-cookie-choice", "rejected");
+    banner.style.display = "none";
+  });
+
+  customize.addEventListener("click", function () {
+    alert("Vous pouvez choisir d’accepter ou de refuser les cookies non essentiels.");
+  });
+});
