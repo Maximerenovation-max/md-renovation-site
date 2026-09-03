@@ -132,3 +132,12 @@ a:hover, button:hover {
     width: 100%;
   }
 }
+/* Fenêtre cookies visible immédiatement à l'écran */
+.cookie-banner {
+  position: fixed !important;
+  top: 50% !important;
+  bottom: auto !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  z-index: 99999 !important;
+}
