@@ -153,3 +153,16 @@ a:hover, button:hover {
   width: min(90%, 650px) !important;
   z-index: 999999 !important;
 }
+html,
+body {
+  transform: none !important;
+}
+
+#cookie-banner {
+  position: fixed !important;
+  top: 50vh !important;
+  left: 50vw !important;
+  right: auto !important;
+  bottom: auto !important;
+  transform: translate(-50%, -50%) !important;
+}
