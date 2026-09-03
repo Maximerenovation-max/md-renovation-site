@@ -255,3 +255,24 @@ body {
     width: 100% !important;
   }
 }
+#cookie-banner .cookie-box {
+  background: white !important;
+  color: #222 !important;
+  padding: 25px !important;
+  border-radius: 15px !important;
+  box-shadow: 0 10px 40px rgba(0,0,0,.35) !important;
+  width: 100% !important;
+  max-width: 600px !important;
+  margin: 0 auto !important;
+}
+
+#cookie-banner .cookie-box h2 {
+  color: #111 !important;
+  margin-bottom: 15px !important;
+}
+
+#cookie-banner .cookie-box p {
+  color: #555 !important;
+  line-height: 1.5 !important;
+  margin-bottom: 20px !important;
+}
