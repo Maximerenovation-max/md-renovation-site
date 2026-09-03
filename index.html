@@ -88,6 +88,22 @@
 <section class="section contact" id="contact"><div class="wrap contact-grid"><div><div class="eyebrow">CONTACT</div><h2>Parlons de votre projet</h2><p>Décrivez-nous vos travaux et nous reviendrons vers vous pour échanger sur votre projet.</p><p class="phone">📞 06 52 02 04 58</p><p>✉️ Maxime.renovation@hotmail.com</p><a class="btn" href="mailto:Maxime.renovation@hotmail.com?subject=Demande de devis M.D Rénovation">Demander un devis</a></div><div class="contact-card"><h3>Besoin d’un renseignement ?</h3><p>Appelez-nous directement ou envoyez votre demande par e-mail.</p><a class="phone" href="tel:0652020458">06 52 02 04 58</a><br><br><a href="mailto:Maxime.renovation@hotmail.com">Maxime.renovation@hotmail.com</a></div></div></section>
 </main><footer class="footer"><div class="wrap"><strong>M.D RÉNOVATION</strong> — Rénovation intérieure & extérieure • Essonne (91)<br>© 2021–2026 M.D Rénovation — Tous droits réservés.</div></footer>
 <div class="lightbox" id="lightbox" aria-hidden="true"><button type="button" aria-label="Fermer">×</button><img src="" alt=""></div>
+  <div id="cookie-banner" class="cookie-banner">
+  <div class="cookie-box">
+    <h2>Nous respectons votre vie privée.</h2>
+    <p>
+      Nous utilisons des cookies pour améliorer votre expérience de navigation,
+      diffuser des publicités ou des contenus personnalisés et analyser notre trafic.
+      En cliquant sur « Tout accepter », vous consentez à notre utilisation des cookies.
+    </p>
+
+    <div class="cookie-buttons">
+      <button id="cookie-customize">Personnaliser</button>
+      <button id="cookie-reject">Tout rejeter</button>
+      <button id="cookie-accept">Accepter tout</button>
+    </div>
+  </div>
+  </div>
 <script>
 const filters=document.querySelectorAll('.filter'), photos=document.querySelectorAll('.photo');
 filters.forEach(btn=>btn.addEventListener('click',()=>{filters.forEach(b=>b.classList.remove('active'));btn.classList.add('active');const f=btn.dataset.filter;photos.forEach(p=>{p.hidden=f!=='all'&&p.dataset.cat!==f})}));
