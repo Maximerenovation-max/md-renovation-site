@@ -1,4 +1,21 @@
-const toggle=document.querySelector('.menu-toggle');const nav=document.querySelector('.links');if(toggle){toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',open?'true':'false')});document.querySelectorAll('.links a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')))}
+document.addEventListener("DOMContentLoaded", function () {
+  const toggle = document.querySelector(".menu-toggle");
+  const nav = document.querySelector(".links");
+
+  if (toggle && nav) {
+    toggle.addEventListener("click", function () {
+      const open = nav.classList.toggle("open");
+      toggle.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+
+    nav.querySelectorAll("a").forEach(function (a) {
+      a.addEventListener("click", function () {
+        nav.classList.remove("open");
+        toggle.setAttribute("aria-expanded", "false");
+      });
+    });
+  }
+});
 /* Animations au défilement M.D Rénovation */
 document.addEventListener("DOMContentLoaded", function () {
   const elements = document.querySelectorAll(
