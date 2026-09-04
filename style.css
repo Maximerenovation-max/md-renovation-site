@@ -367,20 +367,3 @@ body {
     text-align: center !important;
   }
 }
-.menu-toggle {
-  display: none !important;
-}
-
-@media (max-width: 900px) {
-  .menu-toggle {
-    display: block !important;
-  }
-
-  nav.links {
-    display: none !important;
-  }
-
-  nav.links.open {
-    display: flex !important;
-  }
-}
